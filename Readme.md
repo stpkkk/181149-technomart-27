@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Igor Stepanov](https://up.htmlacademy.ru/htmlcss/27/user/181149).
-* Наставник: `Неизвестно`.
+* Наставник: [Marina Udovenko](https://htmlacademy.ru/profile/id7570).
 
 ---
 
