@@ -77,9 +77,29 @@
             <h1>Перфораторы</h1>
         </section>
 
-        <section class="filters">
-            <!-- Здесь будет форма -->
-          </section>
+        <section class="filter">
+         <h2>Фильтр:</h2>
+            <form method="post" action="input.php">
+                <div class="slidecontainer">
+                <p><b>Цена:</b></p>
+                <span>0</span>
+                <input class="slider" type="range" id="price" name="price" min="0" max="30000" step="1"> 
+                <span>30000</span>
+               </div>
+               <p><b>Производители:</b></p>
+                <p><input type="checkbox" name="Bosch" value="1" checked>Bosch<Br>
+                <input type="checkbox" name="Интерскол" value="2">Интерскол<br>
+                <input type="checkbox" name="Makita" value="3" checked>Makita<Br> 
+                <input type="checkbox" name="Dewalt" value="4">Dewalt<br> 
+                <input type="checkbox" name="Hitachi" value="5">Hitachi</p>
+                <p><b>Питание:</b></p>
+                <p><input name="Аккумуляторные" type="radio" value="Аккумуляторные" checked>Аккумуляторные</p>
+                <p><input name="Сетевые" type="radio" value="Сетевые">Сетевые</p>
+                <p><input type="submit" value="Показать"></p>
+                <div class="sort">
+                </div>
+               </form>
+        </section>
 
         <section class="produsers">
             <form method="post" action="input.php">
@@ -96,12 +116,14 @@
                </form>
         </section>
 
-        <section class="">
-            <p>
-                Сортировка
-            </p>
-            <!--По ТЗ будем проходить позже-->
-        </section>
+        <ul class="sort">
+          <b>Сортировка</b>
+          <li class="sort-price">По цене</li>
+          <li class="sort-type">По типу</li>
+          <li class="sort-function">По функционалу</li>
+          <img src="img/icon-up-dir.svg" width="11" height="10" alt="">
+          <img src="img/icon-down-dir.svg" width="11" height="10" alt="">
+         </ul>
 
         <section class="catalog-perfo">
             <h2 class="visually-hidden">Перфораторы</h2>
@@ -262,15 +284,26 @@
                     </a>
                    </p>
                     <p>
-                      
                       <span class="price-2">12500 Р.</span>
                     </p>
                   </li>
             </ul>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+            </ul>
         </section>
-        
+        <section class="about-perfo">
+          <h2>Пара слов о перфораторах</h2>
+             <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+             </p>
+          </section>
     </main>
-    <!--По ТЗ будем проходить позже-->
+    
     <footer>
         <div class="footer-top">
           <a>
@@ -289,10 +322,10 @@
           </ul>
           
           <ul class="catalog-2">
-            <li class="materials-2"><a href="materials.html">Материалы</a></li>
-            <li class="equipment-2"><a href="equipment.html">Техника</a></li>
-            <li class="tools-2"><a href="tools.html">Инструмент</a></li>
-            <li class="sales-2"><a href="sale.html">Спецпредложения</a></li>
+            <li class="footer-materials"><a href="materials.html">Материалы</a></li>
+            <li class="footer-equipment"><a href="equipment.html">Техника</a></li>
+            <li class="footer-tools"><a href="tools.html">Инструмент</a></li>
+            <li class="footer-sales"><a href="sale.html">Спецпредложения</a></li>
           </ul>
         </div>
     
