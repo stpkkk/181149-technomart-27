@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
 
         <div class="header-top">
-          <a>
-            <img src="img/index-logo.svg" width="109" height="19" alt="Логотип «Техномарт»">
+          <a href="index.html">
+            <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип «Техномарт»">
          </a>
           <form>
             <p>
@@ -18,12 +19,12 @@
             </p>
           </form>
           <p>
-            <img src="img/icon-bookmarks.svg" width="14" height="16" alt="Закладки">
+            <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
             <a href="bookmarks.html">Закладки: 0</a>
           </p>
           <p>
-            <img src="img/basket.svg" width="15" height="15" alt="Корзина">
-            <a href="basket.html">Корзина: 10</a>
+            <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">
+            <a href="cart.html">Корзина: 10</a>
           </p>
           <span class="order"><a href="order.html">Оформить заказ</a></span>
         </div>
@@ -45,7 +46,7 @@
           </div>
       
           <div class="user">
-           <img src="img/icon-user" width="20" height="18" alt="Фото">
+           <img src="img/icon-user.svg" width="20" height="18" alt="Фото">
            <p class="user-name">Равшан Джамшутович</p>
            <button type="button"><img src="img/icon-logout.svg" width="20" height="17" alt="Выйти"></button>
            <a href="user-orders">Мои заказы</a>
@@ -68,8 +69,11 @@
     <main class="container">
         <ul class="breadcrumbs">
             <li><a href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Главная"></a></li>
+            <li><img src="img/icon-right-small.svg" width="8" height="12" alt=">">
             <li><a href="catalog.html">Каталог</a></li>
+            <li><img src="img/icon-right-small.svg" width="8" height="12" alt=">">
             <li><a href="tools.html">Инструмент</a></li>
+            <li><img src="img/icon-right-small.svg" width="8" height="12" alt=">">
             <li class="breadcrumbs-current">Перфораторы</li>
           </ul>
 
@@ -83,7 +87,7 @@
                 <div class="slidecontainer">
                 <p><b>Цена:</b></p>
                 <span>0</span>
-                <input class="slider" type="range" id="price" name="price" min="0" max="30000" step="1"> 
+                <input class="slider" type="range" id="price" name="price" min="0" max="30000" step="1" value="26000"> 
                 <span>30000</span>
                </div>
                <p><b>Производители:</b></p>
@@ -142,7 +146,9 @@
                    </p>
                     <p>
                       <span class="price-1">22500 Р.</span>
-                      <span class="price-2">15500 Р.</span>
+                      <!--<span class="price-2">15500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
@@ -160,13 +166,15 @@
                    </p>
                     <p>
                       <span class="price-1">30500 Р.</span>
-                      <span class="price-2">25500 Р.</span>
+                      <!--<span class="price-2">25500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
                   <li class="catalog-item-perfo">
                     <img src="img/new-flag.png" width="60" height="59" alt="Новинка">
-                    <button type="button"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Купить</button>
+                    <button type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">Купить</button>
                     <button type="button">В Закладки</button>
                     <h3>
                       <a href="catalog-item-perfo.html">
@@ -175,7 +183,9 @@
                       </a>
                     </h3>
                     <p>
-                      <span class="price-2">12500 Р.</span>
+                      <!--<span class="price-2">12500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
@@ -193,7 +203,9 @@
                    </p>
                     <p>
                       <span class="price-1">22500 Р.</span>
-                      <span class="price-2">15500 Р.</span>
+                      <!--<span class="price-2">15500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
@@ -212,7 +224,9 @@
                    </p>
                     <p>
                       <span class="price-1">30500 Р.</span>
-                      <span class="price-2">25500 Р.</span>
+                      <!--<span class="price-2">25500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
@@ -249,7 +263,9 @@
                    </p>
                     <p>
                       <span class="price-1">22500 Р.</span>
-                      <span class="price-2">15500 Р.</span>
+                      <!--<span class="price-2">15500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
@@ -267,7 +283,9 @@
                    </p>
                     <p>
                       <span class="price-1">30500 Р.</span>
-                      <span class="price-2">25500 Р.</span>
+                      <!--<span class="price-2">25500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
 
@@ -284,7 +302,9 @@
                     </a>
                    </p>
                     <p>
-                      <span class="price-2">12500 Р.</span>
+                      <!--<span class="price-2">12500 Р.</span>-->
+                      <input type="button" value="13500 Р."/>
+                      <img src="img/red-button.svg" width="141px" height="38px" alt="Кнопка">
                     </p>
                   </li>
             </ul>
@@ -306,8 +326,8 @@
     
     <footer>
         <div class="footer-top">
-          <a>
-            <img src="img/index-logo.svg" width="138" height="23" alt="Логотип «Техномарт»">
+          <a href="index.html">
+            <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип «Техномарт»">
          </a>
          <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -335,9 +355,9 @@
             Все права защищены
           </p>
           <ul>
-            <li><a href="#">Вконтакте</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Инстаграм</a></li>
+           <li class="social-logo"><a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a></li>
+           <li class="social-logo"><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a></li>
+           <li class="social-logo"><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
           </ul>
           <p>
             Обратная связь:<br>
