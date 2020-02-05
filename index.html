@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
@@ -63,49 +65,39 @@
     <h2 class="visually-hidden">Каталог</h2>
     
     <div class="materials">
-      <a href="materials.html">
       <h3>Материалы</h3>
       <span class="new">New</span>
       <img src="img/icon-materials.svg" width="44" height="65" alt="Материалы">
-      </a>
-      <button class="catalog-main-button" type="button">На любой вкус</button>
+      <a class="materials-button" href="materials.html">На любой вкус</a>
     </div>
     
     
    <div class="tools">
-    <a href="tools.html">
     <h3>Инструмент</h3>
     <img src="img/icon-tools.svg" width="75" height="61" alt="Инструменты">
-    </a>
-    <button class="catalog-main-button" type="button">На все случаи</button>
+    <a class="tools-button" href="tools.html">На все случаи</a>
    </div>
     
   <div class="equipment">
-    <a href="equipment.html">
     <h3>Техника</h3>
     <img src="img/icon-equipment.svg" width="78" height="62" alt="Техника">
-    </a>
-    <button class="catalog-main-button" type="button">Для стройки</button>
+    <a class="equipment-button" href="equipment.html">Для стройки</a>
   </div>
   
   <div class="sales">
-    <a href="sales.html">
     <h3>Скидки 50%</h3>
     <img src="img/icon-sales.svg" width="59" height="72" alt="Скидки">
-    </a>
-    <button class="catalog-main-button" type="button">На 350 товаров</button>
+    <a class="sales-button" href="sales.html">На 350 товаров</a>
   </div>
     
   <div class="delivery">
-    <a href="delivery.html">
     <h3>Доставка</h3>
     <img src="img/icon-delivery.svg" width="78" height="63" alt="Доставка">
-    </a>
-    <button class="catalog-main-button" type="button">Бесплатно</button>
+    <a class="delivery-button" href="delivery.html">Бесплатно</a>
   </div>
     
   <div class="slider">
-  <figure>
+  <div>
         <div class="drill">
           <h2>Дрели</h2>
           <p class="drill-info">Соседям на радость!</p>
@@ -118,7 +110,7 @@
           <img src="img/slide-image-hammer.jpg" width="620" height="266" alt="Дрели">
           <a href="catalog.html/hammer">Открыть каталог</a>
         </div>
-  </figure>
+  </div>
 
       <button class="button-back"><img src="img/icon-left.svg" width="22" height="40" alt="Назад"></button>
       <button class="button-forward"><img src="img/icon-right.svg" width="22" height="40" alt="Вперед"></button>
@@ -127,7 +119,7 @@
 
   <section class="popular-goods">
     <h2>Популярыне товары</h2>
-    <button class="popular-goods-button" type="button">Все популярные товары</button>
+    <a class="popular-goods-button" href="catalog.html">Все популярные товары</a>
     <ul class="catalog-list-hammer">
     <li class="catalog-item-hammer">
                        <h3 class="catalog-item-title">Перфоратор BOSCH<br>BFG 9000</h3>
@@ -136,9 +128,9 @@
                       </p>
                        <p>
                         <div class="catalog-buttons">
-                          <button class="visually-hidden buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
-                          <button class="visually-hidden bookmarks-button" type="button">В Закладки</button>
-                          </div>
+                          <button class="buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
+                          <button class="bookmarks-button" type="button">В Закладки</button>
+                        </div>
                         <del>32500 Р.</del>
                         <p class="red-button">25500 Р.</p>
                      </li>
@@ -148,10 +140,10 @@
                     <p class="catalog-item-image-hammer">
                        <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                      </p>
-                     <div class="catalog-buttons,0">
-                      <button class="visually-hidden buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
-                      <button class="visually-hidden bookmarks-button" type="button">В Закладки</button>
-                      </div>
+                     <div class="catalog-buttons">
+                      <button class="buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
+                      <button class="bookmarks-button" type="button">В Закладки</button>
+                     </div>
                        <del>22500 Р.</del>
                        <p class="red-button">15500 Р.</p>
                    </li>
@@ -163,9 +155,9 @@
                       <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                    </p>
                    <div class="catalog-buttons">
-                    <button class="visually-hidden buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
-                    <button class="visually-hidden bookmarks-button" type="button">В Закладки</button>
-                    </div>
+                    <button class="buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
+                    <button class="bookmarks-button" type="button">В Закладки</button>
+                   </div>
                       <del>30500 Р.</del>
                       <p class="red-button">25500 Р.</p>
                   </li>
@@ -177,9 +169,9 @@
                         <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                      </p>
                      <div class="catalog-buttons">
-                      <button class="visually-hidden buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
-                      <button class="visually-hidden bookmarks-button" type="button">В Закладки</button>
-                      </div>
+                      <button class="buy-button" type="button"><img src="img/icon-cart.svg" width="15" height="15" alt="Купить">Купить</button>
+                      <button class="bookmarks-button" type="button">В Закладки</button>
+                     </div>
                         <p class="red-button">12500 Р.</p>
                   </li>
     </ul>
@@ -343,7 +335,7 @@
         <a class="footer-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p>
-        Разработано-<br>
+        Разработано-
         <a class="footer-link" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </div>
