@@ -1,6 +1,797 @@
 body {
-  background-color:lightgray;
+ margin:0;
+ padding:0;
+
+ font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+ font-size: 15px;
+ text-align: left;
+ font-weight: 400;
+ color: #000000;
+
+ background-color: #ffffff;
 }
-.main-navigation{
-  font-family: cuprum;
+
+a {
+  text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.header-logo {
+  background-color: #ee3643;
+  padding: 13px 56px 15px 55px;
+}
+
+.header-logo a:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo a:active {
+  background-color: #ba2732;
+}
+
+.header-search {
+  background-color:#212a3a;
+}
+
+.header-search:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-header {
+  background-color: #f4f7f9;
+}
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+
+.header-bookmarks a,
+.header-cart a,
+.header-order a {
+  color: #ffffff;
+}
+
+.header-bookmarks a:active,
+.header-cart a:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-order a {
+  background-color: #63a63e;
+}
+
+.header-order a:hover {
+  background-color:#5fbb2d;
+}
+.header-order a:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header-about-company {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+}
+
+.header-phone {
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.header-adress {
+  font-size: 14px;
+  line-height: 24px;
+  color:#32425c;
+  text-align: center;
+}
+
+.header-login a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.header-login a:hover {
+  color:#ee3643;
+}
+
+.header-login a:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.header-user-name {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-user-orders,
+.header-cabinet {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-user-orders:hover,
+.header-cabinet:hover {
+  color: #ee3643;
+}
+
+.header-cabinet:active,
+.header-user-orders:active,
+.header-user-name:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color:#ffffff;
+}
+
+.site-navigation a:hover {
+  background-color: #1d2739;
+}
+.site-navigation a:active {
+  background-color: #1d2739;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.main-container {
+  background-color: #ffffff;
+}
+.catalog-main h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color:#ffffff;
+}
+
+.catalog-main-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color:#ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 12px 24px 14px 24px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.catalog-main-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-main-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.materials {
+  width: 300px;
+  height:123px;
+  background-color: #ffbf47;
+}
+
+.new {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: lowercase;
+}
+
+.tools {
+  width: 300px;
+  height:123px;
+  background-color: #3bbce3;
+}
+
+.equipment {
+  width: 300px;
+  height:123px;
+  background-color:#dc91d8;
+}
+
+.sales {
+  width: 300px;
+  height:123px;
+  background-color: #8ed78f;
+}
+
+.delivery {
+  width: 300px;
+  height:123px;
+  background-color: #ffc047;
+}
+
+.slider h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.drill-info,
+.hammer-info {
+  font-size:18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.button-back,
+.button-forward {
+  background-color: transparent;
+}
+
+.slider-button-catalog {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color:#ffffff;
+  text-transform: uppercase;
+  padding: 14px 45px 14px 49px;
+
+  background-color: #ee3643;
+}
+.slider-button-catalog:hover {
+  background-color: #ca2c37;
+}
+
+.slider-button-catalog:active {
+  background-color: #ba2732;
+}
+
+.popular-goods-title {
+  background-color: #f9f5f0;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.section-title-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.popular-goods ul {
+  list-style: none;
+}
+
+.catalog-list-hammer {
+  font-family: PT Sans;
+  font-style: bold;
+}
+
+.catalog-item-hammer {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-item-hammer del {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #a9a9a9;
+  font-weight: bold;
+}
+
+.red-button {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color:#ffffff;
+  font-weight: bold;
+  padding: 13px 40px 13px 36px;
+  width:141px;
+  height: 38px;
+  
+  background-color: #ee3643;
+}
+
+.popular-producers ul {
+  list-style: none;
+}
+
+.producers-list-item {
+  border: solid 1px #eaeaea;
+  width: 220px;
+  height:145px;
+}
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-services {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-list-item {
+  font-size: 21px;
+  line-height: 30px;
+  color:#ffffff;
+  font-weight: bold;
+
+  background-color: #32425c;
+}
+
+.service-list-item:hover {
+  background-color: #293449;
+}
+
+.service-list-item:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.services-slider h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:#32425c;
+}
+
+.services-about {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.services-credit-button{
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ff5357;
+}
+
+.company h2, 
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-contacts,
+.about-company {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: PT Sans;
+}
+
+.delivery-list {
+  list-style: #ee3643;
+}
+
+.delivery-list-item {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-company-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.write-us-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.footer-top {
+  background-color:#32425c;
+}
+
+.footer-logo {
+  background-color: #ee3643;
+}
+
+.footer-adress {
+  font-size: 18px;
+  line-height: 24px;
+  color:#f3f7f9;
+}
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-navigation-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-item a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-catalog {
+  list-style: none;
+}
+
+.footer-catalog-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+  
+}
+
+.footer-catalog-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-catalog-item a:active {
+  color:rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color:#293449;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+}
+
+.footer-social {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-mail,
+.footer-developer {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-mail a,
+.footer-developer a {
+  color: #ffd180;
+}
+
+.footer-mail a:hover,
+.footer-developer a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail a:active,
+.footer-developer a:active {
+  color: #ee3643;
+}
+
+.modal-close {
+  background-color: transparent;
+}
+
+.message-form {
+  font-size: 18px;
+  line-height: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  width: 620px;
+  height: 430px;
+  border-top: 7px solid #ee3643;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+ textarea {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: PT Sans;
+
+  border: solid 2px #dee3e4;
+}
+
+.modal-button-send {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.message-form input:focus {
+  border-color: #ee3643;
+}
+
+textarea:focus {
+  border-color: #ee3643;
+}
+
+.message-form-bottom {
+  background-color: #f4f4f4;
+}
+
+.login-form {
+  font-size: 18px;
+  line-height: 18px;
+  width: 620px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ee3643;
+}
+
+.login-form input:focus {
+  border-color: #ee3643;
+}
+
+.login-button-send {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+/*CATALOG*/
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color:#32425c;
+  text-transform: uppercase;
+
+  background-color:#f2f6f8;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: PT Sans;
+  text-transform: uppercase;
+}
+
+.filters h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: PT Sans;
+  text-transform: uppercase;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter span  {
+  background-color: #f7f3ec;
+}
+
+.filter input[type="text"] {
+  background-color: #f7f3ec;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: PT Sans;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  padding-left:0;
+}
+
+.filter-button, 
+.filter-option,
+.filter-producers {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: PT Sans;
+}
+
+.filter-button {
+  background-color: #e5e5e5;
+}
+
+.sort-list-item,
+.sort h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: PT Sans;
+  text-transform: uppercase;
+}
+
+.sort ul {
+  list-style: none;
+  padding-left:0;
+}
+
+.sort-list-item {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.18);
+}
+
+.sort-icon-up {
+  fill: #000000;
+  fill-opacity: 0.5;
+}
+
+.sort-list-item:hover {
+  color: #000000;
+  text-decoration: underline #ee3643;
+}
+
+.sort-list-item:active {
+  color:#ee3643;
+  text-decoration: none;
+}
+
+.catalog-hammer ul {
+  list-style: none;
+}
+
+.catalog-item-hammer {
+  border: solid 1px #e5e5e5;
+  width:220px;
+  height:318px;
+}
+
+.catalog-buttons {
+  display: none;
+}
+
+.buy-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #63a63e;
+  box-shadow: rgba(41, 52, 73, 0.5) inset;
+}
+.bookmarks-button {
+  border: solid 3px #63a63e;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.buy-button:hover {
+  background-color: #5fbb2d;
+  box-shadow: #367315 inset;
+}
+
+.buy-button:active {
+  background-color: #518534;
+}
+
+.bookmarks-button:hover {
+  border-color:#32425c;
+}
+
+.bookmarks-button:active{
+  border-color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.pagination-list {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  font-family: PT Sans;
+  text-transform: uppercase;
+  list-style: none;
+  display: inline;
+}
+
+.pagination-list-item {
+  padding: 15px 16px 15px 16px;
+  border: solid 1px #e5e5e5;
+  display: inline-flex;
+}
+
+.pagination-item-current {
+  background-color: #ee3643;
+}
+
+.pagination-list-item:hover {
+  border-color: #bdc6ca;
+}
+
+.pagination-list-item:active {
+  border-color: #ee3643;
+}
+
+.about-hammer {
+  background-color: #f4f7f9;
+}
+
+.about-hammer h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-hammer p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: PT Sans;
+}
+
+
+
+
+
+
