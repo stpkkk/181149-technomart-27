@@ -1,13 +1,11 @@
-html,
-body {
-  min-width: 1200px;
-  min-height: 2249px;
-}
 
 body,
 html {
   padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
+  min-width: 960px;
+  min-height: 2249px;
   font-family:"PT Sans", Arial, sans-serif;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 15px;
@@ -100,6 +98,57 @@ img {
   top:0;
 }
 
+.header-search input::placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+ 
+  width: 100%;
+  min-height: 42px;
+}
+
+.header-search input::-webkit-input-placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+ 
+  width: 100%;
+  min-height: 42px;
+}
+.header-search input::-moz-placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+ 
+  width: 100%;
+  min-height: 42px;
+}
+.header-search input:-ms-input-placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+ 
+  width: 100%;
+  min-height: 42px;
+}
+.header-search input::-ms-input-placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: normal;
+ 
+  width: 100%;
+  min-height: 42px;
+}
 .header-search input::placeholder {
   font-family: Cuprum;
   font-size: 17px;
@@ -594,7 +643,6 @@ img {
 .site-navigation-item {
   display: flex;
   flex-grow: 1;
-  
 }
 
 
@@ -662,6 +710,7 @@ img {
   margin-top: 59px;
   margin-bottom: 53px;
   min-height: 409px;
+  margin-left: 0;
 }
 
 .catalog-main h3 {
@@ -1672,6 +1721,7 @@ img {
 
 
 .technomart-contacts {
+  
   min-height: 454px;
 }
 
@@ -1776,6 +1826,8 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .technomart-contacts .company-container {
@@ -1811,6 +1863,7 @@ img {
   padding-bottom: 0px;
   
   box-shadow: inset 0 -5px 0 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: inset 0 -5px 0 0px rgba(0, 0, 0, 0.24);
 }
 
 .footer-adress a,
@@ -1876,6 +1929,7 @@ img {
 }
 
 .footer-top .container {
+  
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2692,6 +2746,7 @@ img {
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 
   position: fixed;
+  z-index: 299;
 
   display: none;
 }
