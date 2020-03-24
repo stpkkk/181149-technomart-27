@@ -8,8 +8,9 @@
   var cartpopup = document.querySelector(".modal-cart");
   var cartclose = document.querySelector(".cart-modal-close");
   var cartlinks = document.querySelectorAll(".catalog-item-hammer .buy");
-  // var storage = localStorage.getItem("e-mail");
-  // var storage = localStorage.getItem("user-name");
+  var maplink = document.querySelector(".contacts .minimap");
+  var mapclose = document.querySelector(".map-modal-close");
+  var mappopup = document.querySelector(".modal-map");
   
   
   
@@ -18,9 +19,6 @@
       evt.preventDefault();
       popup.classList.add("modal-show");
       username.focus();
-      // if (storage) {
-      //   username.value = storage;
-      // } 
   });
 
  close.addEventListener("click", function (evt) {
@@ -112,6 +110,28 @@ cartlinks[7].addEventListener("click", function (evt) {
 cartlinks[8].addEventListener("click", function (evt) {
   evt.preventDefault();
   cartpopup.classList.add("modal-show");
+});
+
+maplink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mappopup.classList.add("modal-show");
+});
+
+
+
+
+window.addEventListener("keydown", function(evt) {
+if (evt.keyCode === 27) {
+if (mappopup.classList.contains("modal-show")) {
+  evt.preventDefault();
+  mappopup.classList.remove("modal-show");
+}
+}
+});
+
+mapclose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mappopup.classList.remove("modal-show");
 });
 
 
